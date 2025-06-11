@@ -29,3 +29,11 @@ class Resize {
 }
 
 new Resize("html");
+
+let mySwiper = new Swiper(".swiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  speed: 1200,
+});
