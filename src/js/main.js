@@ -99,10 +99,20 @@ document.querySelectorAll(".m_section_heading").forEach((section) => {
 });
 
 // top_service ワイプイン
-document.querySelectorAll(".top_service_item").forEach((item, index) => {
-  const directionX = index % 2 === 0 ? -100 : 100; // 奇数なら左、偶数なら右から
+const items = document.querySelectorAll(".top_service_item");
 
-  gsap.fromTo(
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: items[0], // 最初のアイテムをトリガーに
+    start: "top 60%",
+    toggleActions: "play none none reverse",
+  },
+});
+
+items.forEach((item, index) => {
+  const directionX = index % 2 === 0 ? -100 : 100;
+
+  tl.fromTo(
     item,
     {
       x: directionX,
@@ -112,11 +122,8 @@ document.querySelectorAll(".top_service_item").forEach((item, index) => {
       x: 0,
       autoAlpha: 1,
       duration: 0.8,
-      scrollTrigger: {
-        trigger: item,
-        start: "top center",
-        toggleActions: "play none none reverse",
-      },
-    }
+      ease: "power2.out",
+    },
+    index * 0.6 // 少しずつずらして順番に出す（0.2秒ずつ）
   );
 });
