@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードと表示設定 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- タイトル（ページタイトルを変更） -->
+    <title>ZeroPlus | スタートアップのデジタルマーケティング支援</title>
+
+    <!-- ページの説明（SEOに重要） -->
+    <meta
+      name="description"
+      content="ZeroPlusは、スタートアップ企業のデジタルマーケティングをトータルサポート。Webコンサルティングや新規事業立ち上げ支援を通じて、圧倒的なスタートダッシュを実現します。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon / アイコン -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+
+    <!-- OGP設定（SNSでの見え方） -->
+    <meta property="og:site_name" content="ZeroPlus" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ZeroPlus | スタートアップのデジタルマーケティング支援"
+    />
+    <meta
+      property="og:description"
+      content="スタートアップのためのデジタルマーケティング支援。ZeroPlusは新規事業立ち上げやWeb戦略をトータルにサポートします。"
+    />
+    <meta property="og:image" content="https://example.com/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitterカード設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="ZeroPlusは、スタートアップのマーケティング支援に特化したコンサルティング企業です。"
+    />
+    <meta name="twitter:image:src" content="https://example.com/ogp.jpg" />
+
+    <!-- Google Fonts（変更可能） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="js_body">
+    <header class="l_header js_header">
+      <p class="l_header_logo">
+        <a href="index.html" class="l_header_logo-link">
+          <img
+            src="img/logo_black.svg"
+            alt="ZeroPlus"
+            class="l_header_logo-img"
+            width="80"
+            height="24"
+          />
+        </a>
+      </p>
+
+      <nav class="l_header_nav js_navigation">
+        <ul class="l_header_nav-list">
+          <li class="l_header_nav-item">
+            <a href="index.html" class="l_header_nav-link">トップ</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="company.html" class="l_header_nav-link">会社概要</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="service.html" class="l_header_nav-link">サービス</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="news.html" class="l_header_nav-link">新着情報</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="contact.html" class="l_header_nav-link">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+      </button>
+    </header>
+
+    <main class="l_main sub_main">
+      <section class="service_overview m_triangle">
+        <div class="l_contents">
+          <div class="l_container-lg">
+            <h2 class="m_section_heading">
+              <span class="m_section_heading-en">SERVICE</span>
+              <span class="m_section_heading-jp">サービス</span>
+            </h2>
+
+            <div class="service_overview_content">
+              <ul class="service_overview_list">
+                <li class="service_overview_item">
+                  <div class="service_overview_img-wrapper">
+                    <img
+                      src="img/service-img01.webp"
+                      alt=""
+                      class="service_overview_img"
+                      width="992"
+                      height="614"
+                    />
+                  </div>
+
+                  <div class="service_overview_desc">
+                    <h3 class="service_overview_heading">新規事業の開発支援</h3>
+                    <p class="service_overview_txt">
+                      「新規事業を立ち上げたい、でも何から始めればよいか分からない」という方のために、
+                      私たちは新規事業開発のサポートサービスを提供しています。
+                      新規事業開発の経験豊富なコンサルタントが、お客様のビジネスモデルの構築からマーケティング戦略の立案、
+                      資金調達の支援までサポートいたします。
+                    </p>
+                  </div>
+                </li>
+
+                <li class="service_overview_item">
+                  <div class="service_overview_img-wrapper">
+                    <img
+                      src="img/service-img02.webp"
+                      alt=""
+                      class="service_overview_img"
+                      width="992"
+                      height="614"
+                    />
+                  </div>
+
+                  <div class="service_overview_desc">
+                    <h3 class="service_overview_heading">Webコンサルタント</h3>
+                    <p class="service_overview_txt">
+                      私たちは、Webサイトの構築から運用までをトータルサポートします。
+                      Webサイトの目的やターゲットユーザーを明確にし、最適なWebサイトの設計・制作・運用を行います。
+                      また、Webサイトのアクセス解析を行い、効果的な改善策を提案します。
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.service_overview -->
+
+      <section class="service_faq m_triangle">
+        <div class="l_contents">
+          <div class="l_container">
+            <h2 class="m_section_heading">
+              <span class="m_section_heading-en">FAQ</span>
+              <span class="m_section_heading-jp">よくあるご質問</span>
+            </h2>
+
+            <div class="service_faq_wrapper">
+              <button class="service_faq_btn js_faq">
+                <div class="service_faq_content">
+                  <span class="service_faq_icon service_faq_icon__q">Q</span>
+                  <p class="service_faq_txt">
+                    コンサルティングの期間はどれくらいになりますか？
+                  </p>
+                  <div class="service_faq_mark js_faq_mark"></div>
+                </div>
+
+                <div class="service_faq_a js_faq-a">
+                  <div class="service_faq_content service_faq_content__a">
+                    <span class="service_faq_icon service_faq_icon__a">A</span>
+                    <p class="service_faq_txt service_faq_txt__a">
+                      コンサルティングの期間はすべてクライアント様との打合せで決定していきます。<br
+                        class="u_dn-pc"
+                      />
+                      進行体制やゴール設定によっても、コンサルティングの期間が異なります。
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="service_faq_btn js_faq">
+                <div class="service_faq_content">
+                  <span class="service_faq_icon service_faq_icon__q">Q</span>
+                  <p class="service_faq_txt">
+                    WEBコンサルティング開始までの流れはどのようになりますか？
+                  </p>
+                  <div class="service_faq_mark js_faq_mark"></div>
+                </div>
+
+                <div class="service_faq_a js_faq-a">
+                  <div class="service_faq_content service_faq_content__a">
+                    <span class="service_faq_icon service_faq_icon__a">A</span>
+                    <p class="service_faq_txt service_faq_txt__a">
+                      御社の目標・課題・問題点をヒアリング・分析を行い、目的達成・問題解決をする方法をご提案いたします。
+                      ご提案の内容に承認いただけましたら、ご契約後、コンサルティング開始となります。
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="service_faq_btn js_faq">
+                <div class="service_faq_content">
+                  <span class="service_faq_icon service_faq_icon__q">Q</span>
+                  <p class="service_faq_txt">
+                    ホームページ制作やSNS運用等のコンサルティング以外の依頼は可能でしょうか？
+                  </p>
+                  <div class="service_faq_mark js_faq_mark"></div>
+                </div>
+
+                <div class="service_faq_a js_faq-a">
+                  <div class="service_faq_content service_faq_content__a">
+                    <span class="service_faq_icon service_faq_icon__a">A</span>
+                    <p class="service_faq_txt service_faq_txt__a">
+                      可能でございます。お問い合わせいただく際に、併せてご依頼いただけますと幸いです。
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="service_faq_btn js_faq">
+                <div class="service_faq_content">
+                  <span class="service_faq_icon service_faq_icon__q">Q</span>
+                  <p class="service_faq_txt">
+                    業績のレポートなどはどのような形式で共有されますか？
+                  </p>
+                  <div class="service_faq_mark js_faq_mark"></div>
+                </div>
+
+                <div class="service_faq_a js_faq-a">
+                  <div class="service_faq_content service_faq_content__a">
+                    <span class="service_faq_icon service_faq_icon__a">A</span>
+                    <p class="service_faq_txt service_faq_txt__a">
+                      ExcelやGoogleスプレッドシートにて共有させていただきます。
+                      Googleアナリティクス、Googleサーチコンソール上での数値の推移をレポートとしてまとめさせていただきます。
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.service_faq -->
+    </main>
+
+    <div class="m_cta">
+      <div class="m_cta_box">
+        <h3 class="m_cta_heading">お問い合わせはこちら</h3>
+        <p class="m_cta_txt">
+          スタートアップのデジタルマーケティングについて<br
+            class="u_dn-pc"
+          />お気軽にご相談ください
+        </p>
+
+        <div class="m_btn-wrapper m_btn-wrapper__mail">
+          <a href="contact.html" class="m_btn m_btn__mail">
+            まずは無料で相談する
+            <img
+              src="img/icon-mail.webp"
+              alt=""
+              class="m_btn__mail-icon"
+              width="48"
+              height="48"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /.m_cta -->
+
+    <footer class="l_footer">
+      <div class="l_footer_content">
+        <div class="l_footer_info">
+          <div class="l_footer_logo-wrapper">
+            <img
+              src="img/logo_black.svg"
+              alt=""
+              class="l_footer_logo"
+              width="120"
+              height="32"
+            />
+          </div>
+
+          <p class="l_footer_address">
+            〒000-0000<br />
+            東京都豊島区池袋0-00-0
+          </p>
+        </div>
+
+        <nav class="l_footer_nav" aria-label="フッターナビゲーション">
+          <ul class="l_footer_nav-list">
+            <li class="l_footer_nav-item">
+              <a href="index.html" class="l_footer_nav-link">トップ</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="company.html" class="l_footer_nav-link">会社概要</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="service.html" class="l_footer_nav-link">サービス</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="news.html" class="l_footer_nav-link">新着情報</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="contact.html" class="l_footer_nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <small class="l_footer_copyright">
+        <p class="l_footer_copyright-txt">&copy; 2023 Sample.inc</p>
+      </small>
+    </footer>
+  </body>
+</html>

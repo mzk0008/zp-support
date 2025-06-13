@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードと表示設定 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- タイトル（ページタイトルを変更） -->
+    <title>ZeroPlus | スタートアップのデジタルマーケティング支援</title>
+
+    <!-- ページの説明（SEOに重要） -->
+    <meta
+      name="description"
+      content="ZeroPlusは、スタートアップ企業のデジタルマーケティングをトータルサポート。Webコンサルティングや新規事業立ち上げ支援を通じて、圧倒的なスタートダッシュを実現します。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon / アイコン -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+
+    <!-- OGP設定（SNSでの見え方） -->
+    <meta property="og:site_name" content="ZeroPlus" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ZeroPlus | スタートアップのデジタルマーケティング支援"
+    />
+    <meta
+      property="og:description"
+      content="スタートアップのためのデジタルマーケティング支援。ZeroPlusは新規事業立ち上げやWeb戦略をトータルにサポートします。"
+    />
+    <meta property="og:image" content="https://example.com/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitterカード設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="ZeroPlusは、スタートアップのマーケティング支援に特化したコンサルティング企業です。"
+    />
+    <meta name="twitter:image:src" content="https://example.com/ogp.jpg" />
+
+    <!-- Google Fonts（変更可能） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="js_body">
+    <header class="l_header js_header">
+      <p class="l_header_logo">
+        <a href="index.html" class="l_header_logo-link">
+          <img
+            src="img/logo_black.svg"
+            alt="ZeroPlus"
+            class="l_header_logo-img"
+            width="80"
+            height="24"
+          />
+        </a>
+      </p>
+
+      <nav class="l_header_nav js_navigation">
+        <ul class="l_header_nav-list">
+          <li class="l_header_nav-item">
+            <a href="index.html" class="l_header_nav-link">トップ</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="company.html" class="l_header_nav-link">会社概要</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="service.html" class="l_header_nav-link">サービス</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="news.html" class="l_header_nav-link">新着情報</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="contact.html" class="l_header_nav-link">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+      </button>
+    </header>
+
+    <main class="l_main sub_main">
+      <section class="news_archive">
+        <div class="l_contents-sub">
+          <div class="l_container-lg">
+            <h2 class="m_section_heading">
+              <span class="m_section_heading-en">ARCHIVE</span>
+              <span class="m_section_heading-jp">記事の一覧</span>
+            </h2>
+
+            <div class="news_archive_list">
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+
+              <a href="news-single.html" class="news_article_link">
+                <article class="news_article_item">
+                  <div class="news_article_thumb-wrapper">
+                    <img
+                      src="img/article-thumbnail01.webp"
+                      alt=""
+                      class="news_article_thumb"
+                      width="640"
+                      height="396"
+                    />
+                  </div>
+                  <div class="news_article_content">
+                    <div class="news_article_meta">
+                      <time class="news_article_meta-date">2023.01.01</time>
+                      <span class="news_article_meta-cat">プレスリリース</span>
+                    </div>
+                    <h3 class="news_article_title">
+                      株式会社〇〇のオフィスの移転が完了いたしました。
+                    </h3>
+                    <p class="news_article_desc">
+                      株式会社〇〇は、事業拡大と社内メンバー数の増加を受け、オフィスを移転いたしました。
+                      加えて、2023年1月5日から業務を再開し稼働いたしますことをお知らせいたします。
+                    </p>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <!-- /.news_archive_list -->
+
+            <div class="m_pagination">
+              <a
+                href=""
+                class="m_pagination_number m_pagination_number__prev"
+              ></a>
+              <span class="m_pagination_number m_pagination_number__current"
+                >1</span
+              >
+              <a href="" class="m_pagination_number">2</a>
+              <a href="" class="m_pagination_number">3</a>
+              <a href="" class="m_pagination_number">4</a>
+              <a
+                href=""
+                class="m_pagination_number m_pagination_number__next"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.news_archive -->
+    </main>
+
+    <div class="m_cta">
+      <div class="m_cta_box">
+        <h3 class="m_cta_heading">お問い合わせはこちら</h3>
+        <p class="m_cta_txt">
+          スタートアップのデジタルマーケティングについて<br
+            class="u_dn-pc"
+          />お気軽にご相談ください
+        </p>
+
+        <div class="m_btn-wrapper m_btn-wrapper__mail">
+          <a href="contact.html" class="m_btn m_btn__mail">
+            まずは無料で相談する
+            <img
+              src="img/icon-mail.webp"
+              alt=""
+              class="m_btn__mail-icon"
+              width="48"
+              height="48"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /.m_cta -->
+
+    <footer class="l_footer">
+      <div class="l_footer_content">
+        <div class="l_footer_info">
+          <div class="l_footer_logo-wrapper">
+            <img
+              src="img/logo_black.svg"
+              alt=""
+              class="l_footer_logo"
+              width="120"
+              height="32"
+            />
+          </div>
+
+          <p class="l_footer_address">
+            〒000-0000<br />
+            東京都豊島区池袋0-00-0
+          </p>
+        </div>
+
+        <nav class="l_footer_nav" aria-label="フッターナビゲーション">
+          <ul class="l_footer_nav-list">
+            <li class="l_footer_nav-item">
+              <a href="index.html" class="l_footer_nav-link">トップ</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="company.html" class="l_footer_nav-link">会社概要</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="service.html" class="l_footer_nav-link">サービス</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="news.html" class="l_footer_nav-link">新着情報</a>
+            </li>
+            <li class="l_footer_nav-item">
+              <a href="contact.html" class="l_footer_nav-link">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <small class="l_footer_copyright">
+        <p class="l_footer_copyright-txt">&copy; 2023 Sample.inc</p>
+      </small>
+    </footer>
+  </body>
+</html>

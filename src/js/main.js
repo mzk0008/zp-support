@@ -127,3 +127,49 @@ items.forEach((item, index) => {
     index * 0.6 // 少しずつずらして順番に出す（0.2秒ずつ）
   );
 });
+
+// faq アコーディオン
+const faq = document.querySelectorAll(".js_faq");
+
+faq.forEach(function (element) {
+  const faqA = element.querySelector(".js_faq-a");
+
+  element.addEventListener("click", () => {
+    if (element.classList.contains("is-active")) {
+      element.classList.toggle("is-active");
+      element.querySelector(".service_faq_mark").classList.toggle("is-open");
+
+      closingAnime(faqA);
+    } else {
+      element.classList.toggle("is-active");
+      element.querySelector(".service_faq_mark").classList.toggle("is-open");
+
+      openingAnime(faqA);
+    }
+  });
+});
+
+const closingAnime = function (content) {
+  gsap.to(content, {
+    height: 0,
+    opacity: 0,
+    duration: 0.4,
+    ease: "Power4.inOut",
+  });
+};
+
+const openingAnime = function (content) {
+  gsap.fromTo(
+    content,
+    {
+      height: 0,
+      opacity: 0,
+    },
+    {
+      height: "auto",
+      opacity: 1,
+      duration: 0.4,
+      ease: "Power4.inOut",
+    }
+  );
+};

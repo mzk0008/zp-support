@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードと表示設定 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- タイトル（ページタイトルを変更） -->
+    <title>ZeroPlus | スタートアップのデジタルマーケティング支援</title>
+
+    <!-- ページの説明（SEOに重要） -->
+    <meta
+      name="description"
+      content="ZeroPlusは、スタートアップ企業のデジタルマーケティングをトータルサポート。Webコンサルティングや新規事業立ち上げ支援を通じて、圧倒的なスタートダッシュを実現します。"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon / アイコン -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="webclip.png" />
+
+    <!-- OGP設定（SNSでの見え方） -->
+    <meta property="og:site_name" content="ZeroPlus" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ZeroPlus | スタートアップのデジタルマーケティング支援"
+    />
+    <meta
+      property="og:description"
+      content="スタートアップのためのデジタルマーケティング支援。ZeroPlusは新規事業立ち上げやWeb戦略をトータルにサポートします。"
+    />
+    <meta property="og:image" content="https://example.com/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitterカード設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="ZeroPlusは、スタートアップのマーケティング支援に特化したコンサルティング企業です。"
+    />
+    <meta name="twitter:image:src" content="https://example.com/ogp.jpg" />
+
+    <!-- Google Fonts（変更可能） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body class="js_body">
+    <header class="l_header js_header">
+      <p class="l_header_logo">
+        <a href="index.html" class="l_header_logo-link">
+          <img
+            src="img/logo_black.svg"
+            alt="ZeroPlus"
+            class="l_header_logo-img"
+            width="80"
+            height="24"
+          />
+        </a>
+      </p>
+
+      <nav class="l_header_nav js_navigation">
+        <ul class="l_header_nav-list">
+          <li class="l_header_nav-item">
+            <a href="index.html" class="l_header_nav-link">トップ</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="company.html" class="l_header_nav-link">会社概要</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="service.html" class="l_header_nav-link">サービス</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="news.html" class="l_header_nav-link">新着情報</a>
+          </li>
+          <li class="l_header_nav-item">
+            <a href="contact.html" class="l_header_nav-link">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="m_hamburger js_hamburger">
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+        <span class="m_hamburger_bar"></span>
+      </button>
+    </header>
+
+    <main class="l_main sub_main">
+      <div class="contact_form-wrapper">
+        <div class="l_contents-sub">
+          <div class="l_container-sm">
+            <h2 class="m_section_heading">
+              <span class="m_section_heading-en">CONTACT</span>
+              <span class="m_section_heading-jp">お問い合わせ</span>
+            </h2>
+
+            <form action="" class="contact_form">
+              <div class="contact_form_item">
+                <label for="company" class="contact_form_label"> 会社名 </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="contact_form_input"
+                />
+                <span class="contact_form_example">例.株式会社SAMPLE</span>
+              </div>
+
+              <div class="contact_form_item">
+                <label for="name" class="contact_form_label">
+                  お名前
+                  <span class="contact_form_emphasis">必須</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contact_form_input"
+                  required
+                />
+                <span class="contact_form_example">例.山田太郎</span>
+              </div>
+
+              <div class="contact_form_item">
+                <label for="kana" class="contact_form_label">
+                  ふりがな
+                  <span class="contact_form_emphasis">必須</span>
+                </label>
+                <input
+                  type="text"
+                  id="kana"
+                  name="kana"
+                  class="contact_form_input"
+                  required
+                />
+                <span class="contact_form_example">例.やまだたろう</span>
+              </div>
+
+              <div class="contact_form_item">
+                <label for="tel" class="contact_form_label">
+                  電話番号
+                  <span class="contact_form_emphasis">必須</span>
+                </label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="contact_form_input"
+                  required
+                />
+                <span class="contact_form_example">例.09012345678</span>
+              </div>
+
+              <div class="contact_form_item">
+                <label for="email" class="contact_form_label">
+                  メールアドレス
+                  <span class="contact_form_emphasis">必須</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact_form_input"
+                  required
+                />
+                <span class="contact_form_example">例.sample@info</span>
+              </div>
+
+              <fieldset class="contact_form_item">
+                <legend class="contact_form_label">
+                  お問い合わせ項目
+                  <span class="contact_form_emphasis">必須</span>
+                </legend>
+                <ul class="contact_form_radio-list">
+                  <li class="contact_form_radio-item">
+                    <input
+                      type="radio"
+                      class="contact_form_radio"
+                      id="document"
+                      name="radio"
+                      value="document"
+                    />
+                    <label for="document" class="contact_form_radio-label">
+                      資料請求の希望
+                    </label>
+                  </li>
+
+                  <li class="contact_form_radio-item">
+                    <input
+                      type="radio"
+                      class="contact_form_radio"
+                      id="consultation"
+                      name="radio"
+                      value="consultation"
+                    />
+                    <label for="consultation" class="contact_form_radio-label">
+                      無料相談のお申込み
+                    </label>
+                  </li>
+
+                  <li class="contact_form_radio-item">
+                    <input
+                      type="radio"
+                      class="contact_form_radio"
+                      id="contact_estimate"
+                      name="radio"
+                      value="estimate"
+                    />
+                    <label
+                      for="contact_estimate"
+                      class="contact_form_radio-label"
+                    >
+                      見積もりの希望
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="contact_form_item">
+                <label for="message" class="contact_form_label">
+                  お問い合わせ内容
+                  <span class="contact_form_emphasis">必須</span>
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="contact_form_textarea"
+                  placeholder="お問い合わせ内容をご記入ください。"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="contact_form_agree">
+                <input
+                  type="checkbox"
+                  class="contact_form_check"
+                  id="agree"
+                  name="agree"
+                  required
+                />
+                <label for="agree" class="contact_form_agree-txt">
+                  <a
+                    href="privacypolicy.html"
+                    class="contact_form_agree-link"
+                    target="_blank"
+                    >プライバシーポリシー</a
+                  >に同意する
+                </label>
+              </div>
+
+              <div class="m_btn-wrapper m_btn-wrapper__submit">
+                <button type="submit" class="m_btn m_btn__submit">
+                  送信する
+                  <span class="m_btn_arrow"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="l_footer">
+      <small class="l_footer_copyright">
+        <p class="l_footer_copyright-txt">&copy; 2023 Sample.inc</p>
+      </small>
+    </footer>
+  </body>
+</html>
